@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'RemoteSettings_Example' do
+  pod 'RemoteSettings', :path => '../'
+  pod 'RemoteSettings/RxSwift', :path => '../'
+
+  target 'RemoteSettings_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
