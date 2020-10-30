@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RemoteSettings'
   s.version          = '0.1.0'
+  s.swift_versions    = ['5.0', '5.1', '5.2', '5.3']
   s.summary          = 'A core definitions of RemoteSettings.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +27,9 @@ These base protocols enables you to decouple RemoteSettings from third-pary agen
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'NGUYEN CHI CONG' => 'congnc.if@gmail.com' }
   s.source           = { :git => 'https://github.com/congncif/RemoteSettings.git', :tag => s.version.to_s }
-   s.social_media_url = 'https://twitter.com/congncif'
+  s.social_media_url = 'https://twitter.com/congncif'
+  
+  s.ios.deployment_target = '10.0'
   
   s.default_subspec = 'Default'
   
@@ -38,7 +41,7 @@ These base protocols enables you to decouple RemoteSettings from third-pary agen
       co.source_files = 'RemoteSettings/RemoteSettings/**/*'
   end
   
-  s.subspec 'RxSwift' do |co|
+  s.subspec 'Rx' do |co|
       co.source_files = 'RemoteSettings/RemoteSettings+Rx/**/*'
       
       co.dependency 'RemoteSettings/Core'
