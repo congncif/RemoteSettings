@@ -1,30 +1,30 @@
 PODS:
-  - RemoteSettings (0.1.0):
-    - RemoteSettings/Default (= 0.1.0)
-  - RemoteSettings/Core (0.1.0)
-  - RemoteSettings/Default (0.1.0):
-    - RemoteSettings/Core
-  - RemoteSettings/Rx (0.1.0):
-    - RemoteSettings/Core
+  - CoreRemoteSettings (0.1.0):
+    - CoreRemoteSettings/Default (= 0.1.0)
+  - CoreRemoteSettings/Core (0.1.0)
+  - CoreRemoteSettings/Default (0.1.0):
+    - CoreRemoteSettings/Core
+  - CoreRemoteSettings/RxSwift (0.1.0):
+    - CoreRemoteSettings/Core
     - RxSwift
   - RxSwift (5.1.1)
 
 DEPENDENCIES:
-  - RemoteSettings (from `../`)
-  - RemoteSettings/Rx (from `../`)
+  - CoreRemoteSettings (from `../`)
+  - CoreRemoteSettings/RxSwift (from `../`)
 
 SPEC REPOS:
   trunk:
     - RxSwift
 
 EXTERNAL SOURCES:
-  RemoteSettings:
+  CoreRemoteSettings:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RemoteSettings: 8e0fcf5e35dddf905b586b4c58edd945d981d252
+  CoreRemoteSettings: 04d5172b560c6f97f1f298ac4c983ee7d4189f37
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 7f8fe32819d69e939f0d5a68a8f3f87655980d6c
+PODFILE CHECKSUM: 046de3e7bde7f1c7493bd7398c2fae33d8c14139
 
 COCOAPODS: 1.10.0

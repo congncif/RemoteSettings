@@ -1,5 +1,5 @@
 import XCTest
-import RemoteSettings
+import CoreRemoteSettings
 
 class Tests: XCTestCase {
     

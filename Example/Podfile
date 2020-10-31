@@ -1,12 +1,12 @@
 source 'https://cdn.cocoapods.org/'
 
-platform :ios, '13.0'
+platform :ios, '10.0'
 use_frameworks!
 inhibit_all_warnings!
 
 target 'RemoteSettings_Example' do
-  pod 'RemoteSettings', :path => '../'
-  pod 'RemoteSettings/Rx', :path => '../'
+  pod 'CoreRemoteSettings', :path => '../'
+  pod 'CoreRemoteSettings/RxSwift', :path => '../'
 
   target 'RemoteSettings_Tests' do
     inherit! :search_paths

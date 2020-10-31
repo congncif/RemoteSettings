@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RemoteSettings'
-  s.version          = '0.1.0'
+  s.name             = 'CoreRemoteSettings'
+  s.version          = '0.1.1'
   s.swift_versions    = ['5.0', '5.1', '5.2', '5.3']
   s.summary          = 'A core definitions of RemoteSettings.'
 
@@ -34,17 +34,17 @@ These base protocols enables you to decouple RemoteSettings from third-pary agen
   s.default_subspec = 'Default'
   
   s.subspec 'Default' do |co|
-      co.dependency 'RemoteSettings/Core'
+      co.dependency 'CoreRemoteSettings/Core'
   end
   
   s.subspec 'Core' do |co|
       co.source_files = 'RemoteSettings/RemoteSettings/**/*'
   end
   
-  s.subspec 'Rx' do |co|
+  s.subspec 'RxSwift' do |co|
       co.source_files = 'RemoteSettings/RemoteSettings+Rx/**/*'
       
-      co.dependency 'RemoteSettings/Core'
+      co.dependency 'CoreRemoteSettings/Core'
       
       co.dependency 'RxSwift'
   end
