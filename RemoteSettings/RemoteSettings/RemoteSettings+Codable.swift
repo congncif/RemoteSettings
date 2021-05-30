@@ -8,7 +8,7 @@
 import Foundation
 
 extension RemoteSettings {
-    public func value<Value: Decodable>(for key: String) -> Value? {
+    public func decodableValue<Value: Decodable>(type: Value.Type = Value.self, for key: String) -> Value? {
         let settingsValue = self.settingsValue(for: key)
         guard let data = settingsValue.data else { return nil }
         let decoder = JSONDecoder()
